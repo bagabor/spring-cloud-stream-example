@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input-in-0:
+          destination: demo-topic-stream2

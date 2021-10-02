@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        bookProcessor-in-0:
+          destination: demo-topic-stream
+        bookProcessor-out-0:
+          destination: demo-topic-stream2
+
+
+#      kafka:
+#        bindings:
+#          bookProcessor-in-0:
+#            consumer:
+#              configuration:
+#                value:
+#          bookProcessor-out-0:
+#        binder:
+#          brokers:
+#            - localhost:9092
+#            - localhost:9093
